@@ -2,4 +2,4 @@
 
 Provides syntax highlighting for text-format protocol buffer messages.
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![Screenshot](https://cloud.githubusercontent.com/assets/987837/12627112/a6c924ae-c501-11e5-91a4-16ac403d3280.png)
