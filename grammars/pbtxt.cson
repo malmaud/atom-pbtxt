@@ -1,0 +1,52 @@
+'fileTypes': [
+  'pbtxt'
+]
+'scopeName': 'source.pbtxt'
+'name': 'Protobuf text format'
+'foldingStartMarker': '\\{\\s*$'
+'foldingStopMarker': '\\s*\\}$'
+'patterns': [
+  {
+    'include': '#message'
+  }
+  {
+    'include': '#field'
+  }
+]
+'repository':
+  'message':
+    'begin': '\\s*(\\w+)\\s*{'
+    'end': '}'
+    'name': 'meta.messagedef.pbtxt'
+    'beginCaptures':
+      '1':
+        'name': 'entity.name.pbtxt'
+    'patterns': [
+      {
+        'include': '$self'
+      }
+      {
+        'include': '#field'
+      }
+    ]
+  'number':
+    'match': '\\b(\\d+\\.?\\d*)|(\\.\\d+)\\b'
+    'name': 'constant.numeric.pbtxt'
+  'string':
+    'match': '"(.*)"'
+    'name': 'string.quoted.pbtxt'
+  'field':
+    'match': '(\\w+): (.*)'
+    'name': 'meta.field.pbtxt'
+    'captures':
+      '1':
+        'name': 'variable.pbtxt'
+      '2':
+        'patterns': [
+          {
+            'include': '#number'
+          }
+          {
+            'include': '#string'
+          }
+        ]
