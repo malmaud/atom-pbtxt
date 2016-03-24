@@ -1,5 +1,6 @@
 'fileTypes': [
-  'pbtxt'
+  'pbtxt',
+  'prototxt'
 ]
 'scopeName': 'source.pbtxt'
 'name': 'Protobuf text format'

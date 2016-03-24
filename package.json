@@ -8,5 +8,10 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "author": {
+    "name": "Jon Malmaud",
+    "email": "malmaud@gmail.com",
+    "url": "http://malmaud.com"
+  }
 }
