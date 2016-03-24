@@ -1,6 +1,6 @@
 {
   "name": "language-pbtxt",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Adds text-format protocol buffer support to Atom",
   "keywords": [],
   "repository": "https://github.com/atom/language-pbtxt",
